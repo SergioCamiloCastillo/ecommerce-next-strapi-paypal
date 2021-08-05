@@ -7,6 +7,8 @@ import MenuIcon from '@material-ui/icons/Menu';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import {CartContext} from "../context/CartContext";
 import {useContext} from "react";
+import Link from 'next/link'
+
 const Navbar = () => {
     const {cart} = useContext(CartContext);
   return (
@@ -20,13 +22,20 @@ const Navbar = () => {
           >
             <MenuIcon />
           </IconButton>
+          <Link href='/'>
           <Typography variant="h6">
             Ecommerce - Paypal
           </Typography>
-          <Badge variant='seconday' badgeContent={cart.itemsCount}>
+          </Link>
+          
+          <Link href='/cart'>
+          <Badge variant='seconday' badgeContent={cart.itemsCount} >
           <ShoppingCartIcon className='draw-shopcart'></ShoppingCartIcon>
+         
+  
 
           </Badge>
+          </Link>
         </Toolbar>
       </AppBar>
     </div>

@@ -9,10 +9,10 @@ const personaldetailform = ({getFieldProps}) => {
                 <Typography variant='h6'>Personal Detail</Typography>
                 <Grid container spacing={3}>
                     <Grid item xs={12} sm={6}>
-                        <TextField name='firstname' label='First Name' fullWidth {...getFieldProps('firstName')}></TextField>
+                        <TextField name='firstname' label='First Name' fullWidth {...getFieldProps('firstmame')}></TextField>
                     </Grid>
                     <Grid item xs={12} sm={6}>
-                        <TextField name='lastname' label='Last Name' fullWidth {...getFieldProps('lastName')}></TextField>
+                        <TextField name='lastname' label='Last Name' fullWidth {...getFieldProps('lastname')}></TextField>
                     </Grid>
                     <Grid item xs={12} sm={6}>
                         <TextField name='email' label='Email' fullWidth {...getFieldProps('email')}></TextField>
